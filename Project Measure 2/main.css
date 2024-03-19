@@ -1,0 +1,653 @@
+* {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: #FFE083;
+    box-shadow: none;
+    overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 19;
+    width: 100%;
+    color: black;      
+    height: 110px !important; 
+}
+#navEl{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: space-between;
+    background: #FFE083 !important;
+    box-shadow: 0 0 15px black;
+    align-items: center;
+}
+
+.nav_img{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100% !important;
+    height: auto;
+    transition: .2s;
+    left: 0;
+    top: -15px;
+    opacity: 0;
+}
+
+#navEl:hover .nav_img{
+    top: 0;
+    opacity: 1;
+}
+#navEl:hover .logo{
+    top: 20px;
+    opacity: 0;
+}
+
+#navbar{
+    background: none; 
+}
+
+
+.navbar span {  
+    display: flex;
+    position: relative;
+    z-index: 2;
+    background: none !important;
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+
+
+.navbar i{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 15px;
+    border:4px double black;
+    background: none;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+.navbar i:hover{
+    background: black  !important;
+    border:4px double white;
+    color: white;
+}
+
+.navbar i:active{
+    transform: scale(0.9);
+
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    font-family: monospace;
+    color: yellow;
+    transition: .3s linear;
+    padding: 20px 40px;
+    background-image: url("https://exclusivelocalmarketing.com/wp-content/uploads/2015/03/Black-Background-Wood-01-1050x1680.jpg");
+    background-position: center;
+}
+
+
+
+
+.logo {
+    min-width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center !important;
+    font-size: 15mm;
+    display: flex;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    transition: .2s linear;
+    cursor: pointer;
+    top: 0;
+    position: relative;
+}
+
+
+.icons{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    gap: 10px ;
+    background: none;
+}
+
+
+.modal {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    transition: 0.5s linear;
+}
+.background_img{
+    position: absolute !important; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: .2s linear;
+}
+
+
+
+.hide {
+    margin-top: -70%;
+    transition: 0.5s linear;
+}
+
+.card_bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.cards_container{
+    width: 100%;
+    height: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    overflow: auto;
+    background: none;
+    padding: 50px 5px;
+    border: 2px solid gren;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+.modal div span {
+    width: 350px;
+    height:350px;
+    box-shadow: 0 0 15px black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s all;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #FFE083;
+}
+
+
+.modal div span i , .modal div span p{
+    width: auto;
+    height: auto;
+    background: none;
+    padding: 5px 10px;
+    font-weight: 800;
+}
+
+.cardImage{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.cards_container span:hover .cardImage{
+    bottom: 0px;
+    opacity: 1;
+}
+.cards_container span:hover{
+    transform: translateY(10px);
+    background: #000;
+}
+.cards_container span:hover #cardsText{
+    width: 100%;
+    max-height: 15%;
+    font-size:2em !important;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    padding: 0 30px;
+    color: white;
+    justify-content: center;
+    text-shadow: 0 0 2px white,
+    0 0 6px blue, 0 0 2px white,
+    0 0 6px white, 0 0 2px white,
+    0 0 6px aqua, 0 0 2px white,
+    0 0 6px green, 0 0 2px white;
+}
+
+.cards_container span:active{
+    transform: scale(0.9);
+}
+#cardsText{
+    width:100%;
+    height: 100% !important;
+    background: none;
+    height: auto;
+    font-size: 4em;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:   'Ubuntu',sans-serif;
+}
+#cardsText p{
+    background: none !important;
+}
+
+
+
+.cards_container span:nth-child(1) {
+color: #FD9802;
+}
+
+
+.modal div span:nth-child(2) {
+     color: #554e3c;
+}
+.modal div span:nth-child(3) {
+     color: blue;
+                                                                           
+}
+.modal div span:nth-child(4) {
+     color: #4051AF;
+    
+}
+.modal div span:nth-child(5) {
+     color: #68B75F;
+
+}
+
+
+.modal div span:nth-child(6) {
+     color: red;
+
+}
+
+.modal div span:nth-child(7) {
+    color: #FEBE09;
+}
+
+
+.modal div span:nth-child(8) {
+ color: rgb(58, 56, 56);
+}
+
+.fa-arrow-up {
+    background: none !important;
+    transition: 0.3s linear;
+    transform: rotate(180deg);
+}
+
+
+
+.btnRound {
+    transform: rotate(0deg);
+    transition: 0.3s linear;
+}
+
+.workSpace {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 0;
+    padding: 200px 0 0 0;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.workSpace .workImage{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;        
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+
+#form {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: none;
+    border-radius: 40px;
+    background: #FFE083;
+}
+#addition {
+    width: 150px;
+    height: 100%;
+    font-family: monospace;
+    background: none !important;
+    text-transform: uppercase;
+    color: black;
+    background: none !important;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 3.4em;
+    text-align: center;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 10px;
+    text-shadow: none;
+}
+
+
+
+#form input {
+    width: 85%;
+    font-size: 3em;
+    color: #000;
+    border: 2px solid aqua;
+    border-right: none;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    outline: none;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+#form input:hover, #form select:hover{
+    background: #ffa620 !important;
+}
+
+
+#form input::placeholder{
+    color: black;  
+}
+
+#form select{
+    width: 15%;
+    height: 100%;
+    padding: 5px 0;
+    font-size: 2.8em;
+    color: black;
+    background: none !important;
+    font-family: monospace;
+    cursor: pointer;
+    border: 2px solid aqua;
+    border-left: none;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+#form select:focus{
+    border: 2px solid aqua;
+    border-left: none;
+    outline: none;
+}
+
+#form select option{
+    background: white;
+    color: black;
+}
+.result {
+    width: 100%;
+    height: 100% !important;
+    overflow-y: auto;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    position: relative;
+    padding: 10px 100px;
+    background: none;
+    gap: 20px;
+    z-index: 10;
+}
+
+.result span{
+    display: flex !important;
+    width: 500px !important;
+    height: 100px;
+    background: white;
+    border: 2px solid rgb(0, 157, 255);
+    border-radius: 10px;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.result span:hover{
+    background: #FFE083;
+}
+
+.result span p{
+    width: auto;
+    height: auto;
+    background: none;
+    flex-wrap: wrap;
+}
+.result span p:nth-child(1){
+    width: 90%;
+    text-align: center;
+    border-bottom: 2px solid gray;
+}
+
+
+
+
+ .delete{
+    display: none !important;
+}
+
+.delWindow{
+    left: 100% !important;
+    transition: .4s;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1100px) {
+    #navEl{
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+        border-radius: 0;
+        box-shadow: 0 0 15px rgb(36, 36, 36);
+    }
+    .logo{
+        width: 60% !important;
+        font-size: 25px;
+        font-weight: 900 !important;
+        padding: 0;
+    }
+    .icons{
+        width: 30%;
+    }
+    .navbar i{
+        padding: 10px;
+        font-size: 20px !important;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .navbar i:hover{
+        background: none;
+        border: 1px solid black;
+        color: black;
+    }
+    .hide{
+        margin-top: -200%;
+    }
+    .navbar i:hover{
+        background: none !important;
+    }   
+    .workImage{
+        display: none !important;
+    }
+    .modal div span {
+        width: 130px;
+        height: 130px;
+        transition: 0s;
+        font-size: 7px !important;
+        border: none;
+        box-shadow: 0 0 15px rgb(60, 60, 60);
+    }
+    .cardImage{
+        opacity: 0 !important;
+    }
+    .cards_container span:hover #cardsText{
+        width: 100%;
+        max-height: 100% !important;
+        font-size:4em !important;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: none;
+        padding: 0 30px;
+        justify-content: center;
+        text-shadow: none;
+    }
+    .cards_container span:hover{
+        transform: translateY(0px);
+        background: #FFE083;
+    }
+    .cards_container{
+        padding:25px 0;
+        gap: 30px;
+    }
+    .workSpace{
+        background-image: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px 0 0 0;
+    }
+
+
+    #form{
+        width: 100%;
+        padding: 0 5px;
+        height: 150px;
+        display: flex;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        border-radius: 0;
+        background: none !important;
+        justify-content: space-around;
+    }
+    #form input{
+        width: 77%;
+        height: 70px;
+        font-size: 35px;
+        background: #ffffff !important;
+        border: 2px solid black;
+        letter-spacing: 1px;
+        box-shadow: 0 0 10px  black;
+         padding: 15px 10px;
+         border-radius:5px;  
+    }
+    #addition{
+        width: 19%;
+        height: 70px !important;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 1px black;
+        background: white;
+        font-size: 2em;
+        background: #ffffff !important;
+        border: 2px solid black;
+    }
+    #form select{
+        width: 60%; 
+        height: auto;
+        background: #ffffff !important;
+        font-size: 1.3em;
+        border: none;
+        border-radius: 5px ;
+        box-shadow: 0 0 10px 1px black;
+        background: white;
+    }
+    #form select:focus{
+        font-weight: 900;
+        outline: none;
+        border: none;
+    }
+    .result{
+        overflow: auto;
+        max-height: 350px;
+        padding: 0;
+        font-size: 1.5em;
+        padding-bottom: 100px !important;
+    }
+    .result span{
+        width: 90% !important;
+        height: auto;
+        border: none;
+        box-shadow: 0 0 15px rgb(60,60,60);
+    }
+    #form input::placeholder{
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+
+    .nav_img{
+        display: none !important;
+    }
+    #navEl:hover .logo{
+        top: 0;
+        opacity: 1;
+    }
+
+
+
+}

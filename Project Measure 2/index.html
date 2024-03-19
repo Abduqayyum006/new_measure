@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Project ✓</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="navbar" class="navbar">  
+       <div id="navEl">
+        <img class="nav_img" src="images/welcome.png" alt="Welcome back!">
+        <span class="logo">O'lcho'v birliklari</span>
+        <div class="icons">
+            <span><i class="fa-solid fa-arrows-rotate"></i></span>
+            <span class="navArrow"><i class="fa-solid fa-arrow-up"></i></span>
+        </div>
+    </div>
+    </div>
+    <div class="modal">
+        <img class="background_img"
+            src="https://wallpaper-house.com/data/out/12/wallpaper2you_492192.jpg" alt="">
+        <div class="cards_container">
+            <span id="length">
+                <img class="cardImage" src="images/chart.jpg" alt="">
+               <div id="cardsText">
+                <i class="fa-solid fa-chart-simple"></i>
+                 <p>Uzunlik</p>
+               </div>
+            </span> 
+            <span id="weight"> 
+                <img class="cardImage" src="images/scale.jpg" alt="">  
+                <div id="cardsText">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <p>Og'rilik</p>
+                </div>
+            </span>
+            <span id="liquid">
+                <img class="cardImage" src="images/drop.jpg" alt="">
+               <div id="cardsText">
+                <i class="fa-solid fa-droplet"></i>
+                   <p>Suyuqlik</p>
+               </div>
+            </span>
+            <span id="data">
+                <img class="cardImage" src="images/coin.jpg" alt="">
+               <div id="cardsText">
+                   <i class="fa-solid fa-coins"></i>
+                   <p>Ma'lumot</p>
+               </div>
+            </span>
+            <span id="time"> 
+                <img class="cardImage" src="images/clock.jpg" alt="">
+               <div id="cardsText">
+                   <i class="fa-regular fa-clock"></i>
+                   <p>Vaqt</p>
+               </div>
+            </span>
+            <span id="speed">
+                <img class="cardImage" src="images/speedometer.jpg" alt="">
+              <div id="cardsText">
+                  <i class="fa-solid fa-gauge-high"></i>
+                  <p>Tezlik</p>
+              </div>
+            </span>
+            <span id="temperature">
+                <img class="cardImage" src="images/temperature.avif" alt="">
+                <div id="cardsText">
+                    <i class="fa-solid fa-temperature-low"></i>
+                    <p>Harorat</p>
+                </div>
+              </span>
+              <span id="angular">
+                <img class="cardImage" src="images/ruler.jpg" alt="">
+                <div id="cardsText">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <p>Hudud</p>
+                </div>
+              </span>
+        </div>
+    </div>
+    <div class="workSpace">
+        <img class="workImage " src="./images/length.jpg" alt="">
+        <div class="box">
+            <div id="form">
+                <input placeholder="O'lcho'vni kiriting..." type="number">
+                <p id="addition">Kg</p>
+
+                <select name="" id="selectLength" value="10" class="delete">
+                    <option value="Kilometer">Kilometer</option>
+                    <option value="Millimeter">Millimeter</option>
+                    <option value="Santimeter">Santimeter</option>
+                    <option value="Meter">Meter</option>
+                    <option value="Mil">Mil</option>
+                    <option value="Fut">Fut</option>
+                </select>
+
+                <select name="" id="selectWeight" class="delete">
+                    <option value="Kilogramm">Kilogramm</option>
+                    <option value="Gramm">Gramm</option>
+                    <option value="Tonna">Tonna</option>
+                    <option value="Funt">Funt</option>
+                </select>
+
+                <select name="" id="selectLiquid" class="delete">
+                    <option value="Litr">Litr</option>
+                    <option value="Millilitr">Millilitr</option>
+                    <option value="Metrkub">Metr kub</option>
+                </select>
+
+                <select name="" id="selectData" class="delete">
+                    <option value="Megabaytlar">Megabaytlar</option>
+                    <option value="Baytlar">Baytlar</option>
+                    <option value="Kilobaytlar">Kilobaytlar</option>
+                    <option value="Gigabaytlar">Gigabaytlar</option>
+                    <option value="Terabaytlar">Terabaytlar</option>
+                </select>
+
+                <select name="" id="selectTime" class="delete">
+                    <option value="Millisecond">Millisecond</option>
+                    <option value="Second">Secund</option>
+                    <option value="Minute">Minut</option>
+                    <option value="Hour">Soat</option>
+                    <option value="Day">Kun</option>
+                    <option value="Week">Hafta</option>
+                </select>
+
+                <select name="" id="selectSpeed" class="delete">
+                    <option value="Metr/soat">Metr/soat</option>
+                    <option value="Metr/sec">Metr/sec</option>
+                    <option value="KM/sec">KM/sec</option>
+                    <option value="KM/soat">KM/soat</option>
+                    <option value="Fut/sec">Fut/sec</option>
+                    <option value="Mil/sec">Mil/sec</option>
+                </select>
+              
+                <select name="" id="selectTemp" class="delete">
+                    <option value="Selsiy">Selsiy (&deg;C)</option>
+                    <option value="Frangeyt">Frangeyt (&deg;F)</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+
+                <select name="" id="selectArea" class="delete">
+                    <option value="square">Kvadrat Millimeter</option>
+                    <option value="centimeters">Kvadrat Centimeters</option>
+                    <option value="sqMeters">Kvadrat Meters</option>
+                    <option value="hacters">Hacters</option>
+                    <option value="sqKilometers">Kvadrat Meters</option>
+                </select>
+            </div>
+            <div class="result">
+             
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
